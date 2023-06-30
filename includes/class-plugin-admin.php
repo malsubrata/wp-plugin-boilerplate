@@ -29,7 +29,7 @@ if ( ! class_exists( '%PLUGIN_SLUG%_ADMIN' ) ) {
 		 * @since    1.0.0
 		 */
 		public function enqueue_styles() {
-			wp_enqueue_style( '%plugin_slug%-admin', untrailingslashit( plugins_url( '/', %PLUGIN_SLUG%_PLUGIN_FILE ) ) . '/assets/css/%plugin_slug%-admin.css', array(), '1.0.0', 'all' );
+			wp_enqueue_style( '%plugin_slug%-admin', untrailingslashit( plugins_url( '/', %PLUGIN_SLUG%_PLUGIN_FILE ) ) . '/assets/css/admin.css', array(), '1.0.0', 'all' );
 		}
 
 		/**
@@ -38,7 +38,7 @@ if ( ! class_exists( '%PLUGIN_SLUG%_ADMIN' ) ) {
 		 * @since    1.0.0
 		 */
 		public function enqueue_scripts() {
-			wp_enqueue_script( '%plugin_slug%-admin', untrailingslashit( plugins_url( '/', %PLUGIN_SLUG%_PLUGIN_FILE ) ) . '/assets/js/%plugin_slug%-admin.js', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( '%plugin_slug%-admin', untrailingslashit( plugins_url( '/', %PLUGIN_SLUG%_PLUGIN_FILE ) ) . '/assets/js/admin.js', array( 'jquery' ), '1.0.0', false );
 		}
 	}
 }
