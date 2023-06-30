@@ -26,7 +26,7 @@ if ( ! defined( '%PLUGIN_SLUG%_PLUGIN_FILE' ) ) {
 
 // Define %PLUGIN_SLUG%_ABSPATH.
 if ( ! defined( '%PLUGIN_SLUG%_ABSPATH' ) ) {
-	define( '%PLUGIN_SLUG%_ABSPATH', dirname( %PLUGIN_SLUG%_PLUGIN_FILE ) . '/' );
+	define( '%PLUGIN_SLUG%_ABSPATH', dirname( __FILE__ ) . '/' );
 }
 
 // Include the main class.
